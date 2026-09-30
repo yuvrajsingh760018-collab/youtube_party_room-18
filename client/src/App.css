@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.app-container {
+  min-height: 100vh;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff0000;
+  color: #ffffff;
+  border-radius: 14px;
+  font-size: 25px;
+}
+
+.home-card h1 {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-card p {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.input {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 15px;
+
+  background: #ffffff;
+  color: #111827;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.primary-btn {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.secondary-btn {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.secondary-btn:hover {
+  background: #000000;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 22px 0;
+  color: #9ca3af;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+/* =========================
+   ROOM PAGE
+========================= */
+
+.room-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 22px 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.room-header h1 {
+  color: #111827;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.room-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6b7280;
+}
+
+.room-info strong {
+  color: #111827;
+  margin-left: 5px;
+}
+
+.role-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* =========================
+   LEAVE BUTTON
+========================= */
+
+.leave-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+
+  background: #fee2e2;
+  color: #dc2626;
+
+  font-weight: 600;
+}
+
+.leave-btn:hover {
+  background: #fecaca;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-section {
+  background: #000000;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   CONTROL CARD
+========================= */
+
+.control-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.control-card h3 {
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.video-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.video-input-row .input {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.change-btn {
+  width: auto;
+  padding: 13px 22px;
+}
+
+/* =========================
+   PARTICIPANTS
+========================= */
+
+.participants-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.participants-header h2 {
+  color: #111827;
+  font-size: 20px;
+}
+
+.participant-count {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.participant-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.participant-name {
+  color: #111827;
+  font-weight: 600;
+}
+
+.participant-role {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 3px;
+  text-transform: capitalize;
+}
+
+.participant-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.moderator-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+
+  background: #dbeafe;
+  color: #1d4ed8;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.moderator-btn:hover {
+  background: #bfdbfe;
+}
+
+.remove-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+
+  background: #fee2e2;
+  color: #dc2626;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.remove-btn:hover {
+  background: #fecaca;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .home-card {
+    padding: 30px 20px;
+  }
+
+  .room-container {
+    padding: 15px;
+  }
+
+  .room-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .video-section iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-input-row {
+    flex-direction: column;
+  }
+
+  .change-btn {
+    width: 100%;
+  }
+
+  .participant-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .participant-actions {
+    width: 100%;
+  }
+}
