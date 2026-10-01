@@ -1,6 +1,20 @@
 # 🎬 YouTube Watch Party
 
-A real-time YouTube Watch Party application where multiple users can join the same room and watch YouTube videos together with synchronized playback.
+A real-time YouTube Watch Party application where multiple users can
+join the same room and watch YouTube videos together with synchronized
+playback.
+
+---
+
+## 🚀 Live Demo
+
+### Frontend
+https://youtube-party-room-18.vercel.app
+
+### Backend
+https://youtube-party-room-18.onrender.com
+
+---
 
 ## 🚀 Features
 
@@ -19,9 +33,34 @@ A real-time YouTube Watch Party application where multiple users can join the sa
 - Backend permission validation
 - Responsive UI
 
+---
+
+## 👥 Roles
+
+### Host
+- Create room
+- Play/Pause video
+- Seek video
+- Change video
+- Promote participant to Moderator
+- Remove participants
+
+### Moderator
+- Play/Pause video
+- Seek video
+- Change video
+
+### Participant
+- Watch synchronized video
+- Cannot control playback
+- Cannot change video
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React
 - TypeScript
 - Vite
@@ -29,16 +68,58 @@ A real-time YouTube Watch Party application where multiple users can join the sa
 - React YouTube
 
 ### Backend
+
 - Node.js
 - Express.js
 - Socket.IO
 - CORS
 
-## ⚙️ How to Run Locally
+---
 
-### Backend
+## 📁 Project Structure
 
-```bash
-cd server
-npm install
-npm run dev
+```text
+youtube_watch_party/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── VideoPlayer.tsx
+│   │   ├── services/
+│   │   │   └── socket.ts
+│   │   ├── App.tsx
+│   │   └── App.css
+│   │
+│   ├── package.json
+│   └── .env
+│
+├── server/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
+
+
+## 🔄 Real-Time Events
+
+The application uses Socket.IO for real-time communication between users.
+
+### Room Events
+- `join_room` – Join an existing watch party room
+- `leave_room` – Leave the current room
+- `room_created` – Notify the host when a room is created
+- `room_joined` – Notify a user after joining a room
+
+### Video Events
+- `play` – Synchronize video playback
+- `pause` – Synchronize video pause
+- `seek_video` – Synchronize video seeking
+- `change_video` – Change the current YouTube video
+- `sync_state` – Send the current video state to a newly joined user
+
+### User & Role Events
+- `user_joined` – Notify users when someone joins
+- `user_left` – Notify users when someone leaves
+- `assign_role` – Promote a participant to moderator
+- `remove_participant` – Remove a participant from the room
