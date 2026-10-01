@@ -145,6 +145,28 @@ The application was tested for the following scenarios:
 - Backend permission validation
 - Frontend and deployed backend communication
 
+
+## 🧪 Testing
+
+The application was tested for the following scenarios:
+
+- Multiple users joining the same room
+- Room creation and joining using room code
+- Play synchronization between users
+- Pause synchronization between users
+- Seek synchronization between users
+- Late-joiner synchronization
+- YouTube video change synchronization
+- Host and Participant role handling
+- Participant promotion to Moderator
+- Participant removal by Host
+- User leave and disconnect handling
+- Backend permission validation
+- Frontend and deployed backend communication
+- Production deployment testing using Vercel and Render
+
+All major real-time watch party features were tested successfully in the deployed environment.
+
 ## 🌐 Deployment
 
 The application is deployed using Vercel and Render.
