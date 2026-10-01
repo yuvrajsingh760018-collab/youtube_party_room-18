@@ -123,3 +123,24 @@ The application uses Socket.IO for real-time communication between users.
 - `user_left` – Notify users when someone leaves
 - `assign_role` – Promote a participant to moderator
 - `remove_participant` – Remove a participant from the room
+
+
+## 🧪 Testing
+
+The application was tested for the following scenarios:
+
+- Room creation by Host
+- Joining a room using room code
+- Multiple users joining the same room
+- Play synchronization
+- Pause synchronization
+- Seek synchronization
+- Late-joiner synchronization
+- YouTube video change
+- Participant list updates
+- Host and Participant role handling
+- Moderator promotion
+- Participant removal
+- User disconnection handling
+- Backend permission validation
+- Frontend and deployed backend communication
