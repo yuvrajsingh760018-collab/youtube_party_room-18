@@ -144,3 +144,15 @@ The application was tested for the following scenarios:
 - User disconnection handling
 - Backend permission validation
 - Frontend and deployed backend communication
+
+## 🌐 Deployment
+
+The application is deployed using Vercel and Render.
+
+### Frontend
+- Platform: Vercel
+- URL: https://youtube-party-room-18.vercel.app
+
+### Backend
+- Platform: Render
+- URL: https://youtube-party-room-18.onrender.com
